@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: nacos-provider
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 146.56.197.176:8848
+        # 命名空间，用于环境隔离
+        namespace: d4d9df21-38b3-4077-ab84-277dbb5eb13e
+        # 分组
+        group: codefusionary
+
+server:
+  port: 8081
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.codefusionary: DEBUG
+
+# Actuator 配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
