@@ -1,18 +1,29 @@
-# Spring Cloud Alibaba Nacos 服务发现与注册演示
+# Spring Cloud Alibaba Nacos 全功能演示
 
-这个项目展示了如何使用 Spring Cloud Alibaba 和 Nacos 实现微服务的服务发现与注册。它提供了一个简单但功能完整的微服务架构示例，非常适合学习和快速上手 Nacos。
+这个项目全面展示了如何在微服务架构中使用 Spring Cloud Alibaba 和 Nacos。它提供了一系列功能完整的示例，非常适合学习和快速上手 Nacos 的各项功能。
 
-## 主要特性:
-- 使用 Nacos 作为服务注册中心
-- 包含服务提供者和消费者的完整示例
-- 演示 Feign 客户端的使用
-- 配置文件示例（YAML格式）
-- 清晰的项目结构，易于理解和扩展
+主要特性:
+• Nacos 服务注册与发现
+• Nacos 配置中心基础应用
+• 服务提供者/消费者示例
+• Feign 客户端使用
+• 动态配置更新演示
+• 多环境配置管理
+• YAML 配置文件示例
+• 清晰的项目结构，易于理解和扩展
 
-🚀 完美的 Spring Cloud 微服务入门项目！
+🚀 适合深入学习 Spring Cloud 微服务和 Nacos 的综合性项目！
 
-## 相关资源:
-- 博客教程: [Spring Cloud Alibaba Nacos：服务注册与发现](https://www.codefusionary.com/119.html)
-- 更多微服务教程: [CodeFusionary Blog](https://www.codefusionary.com/)
+即将添加的高级特性:
+• Nacos 配置加密存储
+• 多集群配置管理
+• 命名空间隔离
+• Nacos 权限控制
+• 与 Spring Cloud Gateway 集成
 
-欢迎访问我的博客，获取更多关于 Spring Cloud、Nacos 和微服务架构的深入教程和最佳实践！
+📖 系列教程:
+• Nacos 服务注册与发现: [[链接](https://www.codefusionary.com/119.html)]
+• Nacos 配置中心基础: [[链接](https://www.codefusionary.com/150.html)]
+• 更多微服务教程: CodeFusionary Blog
+
+欢迎访问我的博客，获取 Spring Cloud、Nacos 和微服务架构的深入教程和最佳实践！
