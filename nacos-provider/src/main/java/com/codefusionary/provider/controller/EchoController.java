@@ -1,12 +1,20 @@
 package com.codefusionary.provider.controller;
 
-import com.codefusionary.api.EchoService;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class EchoController implements EchoService {
-    @Override
-    public String echo(String message) {
-        return "Echo from provider: " + message;
+@RefreshScope
+public class EchoController {
+
+    @Value("${echo.prefix}")
+    private String prefix;
+
+    @GetMapping("/echo/{message}")
+    public String echo(@PathVariable String message) {
+        return prefix + ": " + message;
     }
 }

@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 119.45.187.125:8848
+        # 命名空间，用于环境隔离
+        namespace: d4d9df21-38b3-4077-ab84-277dbb5eb13e
+        # 分组
+        group: codefusionary
+    config:
+      server-addr: 119.45.187.125:8848
+      namespace: d4d9df21-38b3-4077-ab84-277dbb5eb13e
+      file-extension: yml
+server:
+  port: 8080
+
+## 日志配置
+#logging:
+#  level:
+#    root: INFO
+#    com.codefusionary: DEBUG
+#
+## Feign 配置
+#feign:
+#  client:
+#    config:
+#      default:
+#        connectTimeout: 5000
+#        readTimeout: 5000
+#  compression:
+#    request:
+#      enabled: true
+#    response:
+#      enabled: true
+#
+## Actuator 配置
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    health:
+#      show-details: ALWAYS
